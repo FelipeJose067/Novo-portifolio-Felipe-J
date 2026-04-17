@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Felipe J</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="JS/script.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -62,10 +69,13 @@
 
                     <h3 class="info-projeto">Inovação em VAREJO 2025</h3>
 
-                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
-                        doloremque excepturi quisquam ex
-                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
-                        consequatur magni accusamus aut!</p>
+                    <p class="paragrafo-projeto">Participei do Hackathon de Inovação em Varejo 2025, onde tive a
+                        oportunidade de trabalhar em equipe no desenvolvimento de soluções criativas voltadas para o
+                        setor varejista. Durante o evento, atuei na construção de ideias que visavam melhorar a
+                        experiência do cliente e otimizar processos, aplicando na prática meus conhecimentos em
+                        tecnologia, colaboração e resolução de problemas sob pressão. Essa experiência fortaleceu minhas
+                        habilidades em trabalho em equipe, pensamento estratégico e desenvolvimento de soluções
+                        inovadoras.</p>
                 </div>
             </div>
             <div class="projeto-card">
@@ -73,10 +83,12 @@
                 <div class="caixa-texto-projeto">
                     <h3 class="info-projeto">Inovação em TURISMO 2026</h3>
 
-                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
-                        doloremque excepturi quisquam ex
-                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
-                        consequatur magni accusamus aut!</p>
+                    <p class="paragrafo-projeto">Participei do Hackathon de Inovação em Turismo 2026, onde colaborei no
+                        desenvolvimento de soluções criativas para melhorar a experiência de turistas e valorizar
+                        destinos locais. Durante o evento, trabalhei em equipe para criar propostas inovadoras,
+                        aplicando conceitos de tecnologia, usabilidade e pensamento estratégico. Essa experiência
+                        reforçou minhas habilidades em colaboração, criatividade e desenvolvimento de soluções voltadas
+                        para problemas reais.</p>
 
                 </div>
             </div>
@@ -86,21 +98,62 @@
 
                     <h3 class="info-projeto">Criação do Gerenciamento das Startups</h3>
 
-                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
-                        doloremque excepturi quisquam ex
-                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
-                        consequatur magni accusamus aut!</p>
+                    <p class="paragrafo-projeto">Atualmente, estou desenvolvendo um projeto voltado à criação de um
+                        sistema de gestão de startups para a ParkTec em 2026. A proposta consiste em construir uma
+                        solução que auxilie no gerenciamento, organização e acompanhamento das startups, facilitando
+                        processos e otimizando a tomada de decisões. Durante o desenvolvimento, aplico conceitos de
+                        desenvolvimento web, trabalho em equipe e resolução de problemas reais, buscando criar uma
+                        ferramenta funcional, eficiente e alinhada às necessidades do ambiente de inovação.</p>
                 </div>
             </div>
+        </div>
+        <div class="habilidade-card">
+            <h3 class="info-habilidade">Figma</h3>
+            <p class="paragrafo-habilidade">
+                Experiência na criação de interfaces modernas e protótipos interativos utilizando o Figma, desenvolvendo
+                layouts organizados, focados em usabilidade e experiência do usuário.
+            </p>
+        </div>
+
+        <div class="habilidade-card">
+            <h3 class="info-habilidade">Python</h3>
+            <p class="paragrafo-habilidade">
+                Conhecimento em lógica de programação e desenvolvimento com Python, criando soluções eficientes,
+                automatizações e aplicações voltadas para resolução de problemas.
+            </p>
+        </div>
+
+        <div class="habilidade-card">
+            <h3 class="info-habilidade">GitHub</h3>
+            <p class="paragrafo-habilidade">
+                Utilização do GitHub para versionamento de código, organização de projetos e colaboração em equipe,
+                aplicando boas práticas de controle de versões.
+            </p>
+        </div>
+
+        <div class="habilidade-card">
+            <h3 class="info-habilidade">HTML</h3>
+            <p class="paragrafo-habilidade">
+                Domínio na estruturação de páginas web utilizando HTML, criando layouts semânticos, organizados e
+                preparados para boas práticas de desenvolvimento.
+            </p>
+        </div>
+
+        <div class="habilidade-card">
+            <h3 class="info-habilidade">CSS</h3>
+            <p class="paragrafo-habilidade">
+                Experiência na estilização de interfaces com CSS, utilizando conceitos como Flexbox, Grid e animações
+                para criar layouts responsivos e visualmente atrativos.
+            </p>
         </div>
 
     </section>
 
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo" id="formulario">Entre em Contato</h2>
-        <form class="formulario-contato">
+        <form class="formulario-contato" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input class="campo-form" type="text" placeholder="Digite seu nome" id="nome" onsubmit="enviarWhats(event)">
+                <input class="campo-form" type="text" placeholder="Digite seu nome" id="nome">
             </div>
 
             <div class="grupo-form">
@@ -112,9 +165,23 @@
         </form>
 
     </section>
+    <footer class="copyright">
+
+        <div class="copyrigth">
+            <span>
+                &copy Felipe J 2026
+            </span>
+            <div class="footer-itens">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
 
 
+
+        </div>
+
+
+    </footer>
 </body>
-
 
 </html>

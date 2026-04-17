@@ -94,6 +94,8 @@ body {
     border-radius: 50%;
     border: 4px solid var(--vidro);
     animation: flutuar 3s ease-in-out infinite;
+    /* preencher e dar o zoom dos espaço da foto */
+    object-fit: cover;
 
 }
 
@@ -131,7 +133,6 @@ h1 {
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.05);
-
 }
 
 .sobre-paragrafo {
@@ -147,6 +148,9 @@ h1 {
     margin-bottom: 50px;
 }
 
+.paragrafo-projeto{
+    gap: 20px;
+}
 .projeto-caixa {
     /* organizar como grade */
     display: grid;
@@ -180,14 +184,15 @@ h1 {
     object-fit: cover;
 
 
-
-    .projeto-card {
-        padding: 20px;
-    }
 }
 
+.projeto-card {
+    padding: 20px;
+}
+
+
 .caixa-texto-projeto {
-    padding: 30px;
+    padding: 40px;
 }
 
 .info-titulo {
@@ -246,7 +251,7 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 
 }
 
@@ -258,7 +263,7 @@ h1 {
 
 /* efeitos na pagina de fundo body */
 
-.particulas{
+.particulas {
     position: fixed;
     top: 0;
     left: 0;
@@ -271,15 +276,81 @@ h1 {
         var(--maisEscuro);
 }
 
+.copyrigth{
+    color: var(--claro);
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;  
+    text-align: center;  
+}
+
+.footer-itens{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 30px 8% 25px 8%;
+}
+
+.habilidades {
+    padding: 6rem 2rem;
+}
+
+.habilidades-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.habilidades-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.habilidade-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.info-habilidade {
+    font-size: 1.3rem;
+    color: var(--primaria);
+    margin-bottom: 10px;
+}
+
+.paragrafo-habilidade {
+    font-size: 0.95rem;
+    color: var(--claro);
+    line-height: 1.4rem;
+}
+
+
+
+
 /* fazer a foto ficar se movendo */
 
 @keyframes flutuar {
-    0%, 100%{
+
+    0%,
+    100% {
         transform: translateY(0);
 
     }
 
-    50%{
+    50% {
         transform: translateY(-40px);
     }
 }
