@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Garante que bordas/padding não aumentem o tamanho do elemento */
+    box-sizing: border-box;
+    /* fonte da pagina */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    /* deixar o comportamento suave */
+    scroll-behavior: smooth;
+}
+
+/* raiz do projeto */
+:root {
+    /* cores padrao da pagina */
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.menu {
+    /* deixar um do lado do outro */
+    display: flex;
+    /* tirar a bolinha do nome */
+    list-style: none;
+    /* espaçamento entre os elementos */
+    gap: 3rem;
+    /* centralizar os itens */
+    justify-content: center;
+}
+
+
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 0.5rem 0;
+}
+
+.menu-link {
+    /* tirar as linhas  */
+    text-decoration: none;
+    /* mudar a cor de fonte */
+    color: var(--claro);
+    /* tamanho da fonte */
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: " ";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover:after {
+    width: 100%;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* deixar um embaixo do outro */
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.foto-perfil {
+    width: 300px;
+    height: 280px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 10);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    animation: flutuar 3s ease-in-out infinite;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.cabecalho-subtitle {
+    font-size: 1.5rem;
+    color: var(--claro);
+
+
+}
+
+.sobre {
+    padding: 6rem 2rem;
+
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+
+}
+
+.sobre-paragrafo {
+    /* text-align: center; */
+    font-size: 1rem;
+    /* margin-bottom: 3rem; */
+}
+
+.projeto-titulo {
+    padding: 6rem 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projeto-caixa {
+    /* organizar como grade */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--vidro);
+    /* esconder a ponta da borda */
+    overflow: hidden;
+    /* padding: 20px; */
+}
+
+.projeto-card:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translate(-10px) scale(1.2);
+    transition: all 0.5s ease;
+}
+
+
+.projeto-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+
+
+    .projeto-card {
+        padding: 20px;
+    }
+}
+
+.caixa-texto-projeto {
+    padding: 30px;
+}
+
+.info-titulo {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+
+}
+
+
+.contatos {
+    padding: 6rem 2rem;
+}
+
+.contatos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--claro);
+    border: 1px solid var(--vidro);
+    outline: none;
+}
+
+.campo-form:focus {
+    border-color: var(--secundaria);
+    box-shadow: 0px 0px 10px rgba(79, 70, 229, 0.3);
+}
+
+.btn-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+
+}
+
+.btn-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+
+/* efeitos na pagina de fundo body */
+
+.particulas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+        var(--maisEscuro);
+}
+
+/* fazer a foto ficar se movendo */
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0);
+
+    }
+
+    50%{
+        transform: translateY(-40px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* preciso fazer o Copyrigth com o rodape */

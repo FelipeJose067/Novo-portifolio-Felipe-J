@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Felipe J</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/script.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a class="menu-link" href="#inicio">Inicio</a></li>
+            <li><a class="menu-link" href="#sobre">Sobre</a></li>
+            <li><a class="menu-link" href="#projetos">projetos</a></li>
+            <li><a class="menu-link" href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <!-- <div> -->
+        <img src="IMG/Imagem Perfil.png" class="foto-perfil">
+        <h1>Felipe José</h1>
+        <p class="cabecalho-subtitle">Desenvolvedor Full Stack</p>
+        <!-- </div> -->
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou um desenvolvedor em formação, apaixonado por tecnologia e focado em transformar ideias em soluções
+                reais. Atualmente, estou em constante evolução na área de desenvolvimento web, trabalhando com HTML, CSS
+                e
+                conceitos modernos como Flexbox, sempre buscando criar interfaces organizadas, funcionais e visualmente
+                atraentes.
+                Além da programação, tenho uma forte mentalidade empreendedora. Sou responsável pela Riqueza em
+                Temperos,
+                onde atuo diretamente com vendas, estratégias comerciais e relacionamento com clientes. Essa experiência
+                me
+                trouxe habilidades importantes como comunicação, disciplina e foco em resultados.
+                Também participo de projetos práticos através do curso de Fábrica de Software no SENAC-MS, onde
+                desenvolvo
+                soluções em equipe, aplicando na prática conceitos de desenvolvimento e colaboração.
+                Meu objetivo é crescer na área de tecnologia, adquirindo experiência, enfrentando desafios e construindo
+                projetos que realmente façam a diferença.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projeto">
+        <h2 class="projeto-titulo">Meus Projetos</h2>
+        <div class="projeto-caixa">
+            <div class="projeto-card">
+                <img src="IMG/ProjetoHackton 1.png" alt="projeto1" class="projeto-img">
+                <div class="caixa-texto-projeto">
+
+                    <h3 class="info-projeto">Inovação em VAREJO 2025</h3>
+
+                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+                        doloremque excepturi quisquam ex
+                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
+                        consequatur magni accusamus aut!</p>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="IMG/Projeto Hackton 2.png" alt="projeto2" class="projeto-img">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projeto">Inovação em TURISMO 2026</h3>
+
+                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+                        doloremque excepturi quisquam ex
+                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
+                        consequatur magni accusamus aut!</p>
+
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="IMG/projeto parktec 3.png" alt="projeto3" class="projeto-img">
+                <div class="caixa-texto-projeto">
+
+                    <h3 class="info-projeto">Criação do Gerenciamento das Startups</h3>
+
+                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+                        doloremque excepturi quisquam ex
+                        dicta nihil adipisci. Quas, enim, provident, hic praesentium vero assumenda rerum quisquam
+                        consequatur magni accusamus aut!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo" id="formulario">Entre em Contato</h2>
+        <form class="formulario-contato">
+            <div class="grupo-form">
+                <input class="campo-form" type="text" placeholder="Digite seu nome" id="nome" onsubmit="enviarWhats(event)">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="6"></textarea>
+
+            </div>
+
+            <button type="submit" class="btn-form">Enviar Whatssap</button>
+        </form>
+
+    </section>
+
+
+</body>
+
+
+</html>
